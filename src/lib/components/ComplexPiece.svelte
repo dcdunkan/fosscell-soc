@@ -10,8 +10,8 @@
 	let {
 		flicks,
 		locked,
-		colors = 0,
-	}: { flicks: number; locked: boolean; colors?: number } = $props();
+		paths: paths = 0,
+	}: { flicks: number; locked: boolean; paths?: number } = $props();
 	/**
 	 *       5 (0) 6
 	 *      ----|----
@@ -33,7 +33,7 @@
 
 	const colored: boolean[] = Array(12)
 		.fill(0)
-		.map((_, i) => (colors & (2 ** i)) === 2 ** i)
+		.map((_, i) => (paths & (2 ** i)) === 2 ** i)
 		.toReversed();
 </script>
 

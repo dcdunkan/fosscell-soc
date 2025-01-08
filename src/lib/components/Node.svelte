@@ -12,6 +12,10 @@
 		locked: boolean;
 		children: Node[];
 	}
+
+	export type BaseNode = Omit<Node, "id" | "level" | "children"> & {
+		children: BaseNode[];
+	};
 </script>
 
 <script lang="ts">
@@ -28,7 +32,7 @@
 	}
 
 	// TODO: a lot of unnecessary duplications, needs to be fixed.
-	function calc(i: number): number {
+	function findPathBorders(i: number): number {
 		const flicks: number[] = [];
 
 		if (!data.children[i].locked) {
@@ -132,7 +136,7 @@
 						<ComplexPiece
 							flicks={0b010100000000}
 							locked={child.locked}
-							colors={data.children[0].locked ? 0 : flicksBuilder(1, 3)}
+							paths={data.children[0].locked ? 0 : flicksBuilder(1, 3)}
 						/>
 					{:else if n % 2 != 0}
 						<div class="grid h-full">
@@ -142,17 +146,29 @@
 								<ComplexPiece
 									flicks={flicksBuilder(0, 1, 2, 3)}
 									locked={child.locked}
-									colors={calc(i)}
+									paths={findPathBorders(i)}
 								/>
 							{:else if i === 0}
 								<!-- FIRST ONE -->
-								<ComplexPiece flicks={0b011000000000} locked={child.locked} colors={calc(i)} />
+								<ComplexPiece
+									flicks={0b011000000000}
+									locked={child.locked}
+									paths={findPathBorders(i)}
+								/>
 							{:else if i === n - 1}
 								<!-- LAST ONE -->
-								<ComplexPiece flicks={0b110000000000} locked={child.locked} colors={calc(i)} />
+								<ComplexPiece
+									flicks={0b110000000000}
+									locked={child.locked}
+									paths={findPathBorders(i)}
+								/>
 							{:else}
 								<!-- MIDWAY -->
-								<ComplexPiece flicks={0b111000000000} locked={child.locked} colors={calc(i)} />
+								<ComplexPiece
+									flicks={0b111000000000}
+									locked={child.locked}
+									paths={findPathBorders(i)}
+								/>
 							{/if}
 						</div>
 					{:else}
@@ -162,23 +178,35 @@
 								<ComplexPiece
 									flicks={flicksBuilder(10, 2, 1, n > 2 && 0)}
 									locked={child.locked}
-									colors={calc(i)}
+									paths={findPathBorders(i)}
 								/>
 							{:else if i === n / 2}
 								<ComplexPiece
 									flicks={flicksBuilder(5, 0, 1, n > 2 && 2)}
 									locked={child.locked}
-									colors={calc(i)}
+									paths={findPathBorders(i)}
 								/>
 							{:else if i === 0}
 								<!-- FIRST ONE -->
-								<ComplexPiece flicks={0b011000000000} locked={child.locked} colors={calc(i)} />
+								<ComplexPiece
+									flicks={0b011000000000}
+									locked={child.locked}
+									paths={findPathBorders(i)}
+								/>
 							{:else if i === n}
 								<!-- LAST ONE -->
-								<ComplexPiece flicks={0b110000000000} locked={child.locked} colors={calc(i)} />
+								<ComplexPiece
+									flicks={0b110000000000}
+									locked={child.locked}
+									paths={findPathBorders(i)}
+								/>
 							{:else}
 								<!-- MIDWAY -->
-								<ComplexPiece flicks={0b111000000000} locked={child.locked} colors={calc(i)} />
+								<ComplexPiece
+									flicks={0b111000000000}
+									locked={child.locked}
+									paths={findPathBorders(i)}
+								/>
 							{/if}
 						</div>
 					{/if}
