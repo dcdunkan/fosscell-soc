@@ -99,7 +99,7 @@
 										icon: PaintbrushIcon,
 										children: [
 											{
-												locked: false,
+												locked: true,
 												title: "Backend",
 												points: 15,
 												days: 7,
@@ -163,7 +163,7 @@
 						],
 					},
 					{
-						locked: true,
+						locked: false,
 						title: "Review Submission",
 						points: 15,
 						days: 7,
@@ -171,7 +171,7 @@
 						icon: EyeIcon,
 						children: [
 							{
-								locked: false,
+								locked: true,
 								title: "UI",
 								points: 15,
 								days: 7,
