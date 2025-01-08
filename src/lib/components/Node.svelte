@@ -43,24 +43,33 @@
 			}
 			const root0 = n / 2 - 1,
 				root1 = n / 2;
-			// MIN N >= 3
-			if (i == root0 || i === root1) {
-				const first = data.children.slice(0, i).findIndex(isUnlocked),
-					last = data.children.slice(i + 1).findLastIndex(isUnlocked);
-				if (first != -1) flicks.push(0);
-				if (last != -1) flicks.push(2);
+
+			if (i == root0) {
+				if (!data.children[i].locked) flicks.push(2);
+				const upper = data.children.slice(0, root0).findIndex(isUnlocked);
+				if (upper != -1) flicks.push(0, 2);
+			} else if (i === root1) {
+				if (!data.children[i].locked) flicks.push(0);
+				const downer = data.children.slice(root1 + 1).findLastIndex(isUnlocked);
+				if (downer != -1) flicks.push(0, 2);
 			} else if (i === 0) {
 				if (!data.children[i].locked) flicks.push(2);
 			} else if (i === n - 1) {
 				if (!data.children[i].locked) flicks.push(0);
 			} else {
 				if (i < root0) {
+					if (!data.children[i].locked) {
+						flicks.push(2);
+					}
 					const up = data.children.slice(0, i).findIndex(isUnlocked);
 					if (up != -1) {
 						flicks.push(0);
 						flicks.push(2);
 					}
 				} else if (i > root1) {
+					if (!data.children[i].locked) {
+						flicks.push(0);
+					}
 					const down = data.children.slice(i + 1).findLastIndex(isUnlocked);
 					if (down != -1) {
 						flicks.push(0);

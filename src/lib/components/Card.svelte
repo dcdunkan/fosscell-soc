@@ -74,12 +74,12 @@
 			auctor enim. Morbi consectetur auctor auctor. Morbi convallis felis at dolor lobortis
 			vestibulum. In sit amet commodo dui.
 		</div>
-		{#if data.locked}
+		<!-- {#if data.locked}
 			<button
 				class="bg-special hover:text-special mt-4 rounded p-2 font-clash font-semibold text-white transition-all duration-200 hover:bg-white"
 				>Unlock</button
 			>
-		{/if}
+		{/if} -->
 	</div>
 {/snippet}
 
