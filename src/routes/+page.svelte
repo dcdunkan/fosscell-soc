@@ -1,8 +1,8 @@
 <script lang="ts">
 	import NodeRoot, { type Node } from "$lib/components/Node.svelte";
-	import { ACTIVITY_MANAGEMENT, generateNode } from "$lib/initial-data";
+	import { PHARMALINK, generateNode } from "$lib/initial-data";
 
-	const root = $state(generateNode(ACTIVITY_MANAGEMENT, false));
+	const root = $state(generateNode(PHARMALINK, false));
 </script>
 
 <div id="root" class="h-screen select-none overflow-scroll scroll-smooth">

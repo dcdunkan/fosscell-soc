@@ -1,16 +1,18 @@
 import type { BaseNode, Node } from "./components/Node.svelte";
 import {
-	ActivityIcon,
-	EllipsisIcon,
+	BoxesIcon,
+	CircleDollarSignIcon,
 	EyeIcon,
-	FileUpIcon,
 	HammerIcon,
 	LayoutDashboardIcon,
 	LayoutTemplateIcon,
-	NotebookPenIcon,
 	PaintbrushIcon,
+	PillBottleIcon,
+	PillIcon,
 	ScanFaceIcon,
-	ShieldIcon,
+	SearchIcon,
+	ShoppingCartIcon,
+	UserRoundIcon,
 } from "lucide-svelte";
 
 export function generateNode(node: BaseNode, locked: boolean, level = 0): Node {
@@ -29,13 +31,13 @@ export function generateNode(node: BaseNode, locked: boolean, level = 0): Node {
 	};
 }
 
-export const ACTIVITY_MANAGEMENT: BaseNode = {
-	title: "Activity Management",
-	locked: false,
+export const PHARMALINK: BaseNode = {
+	title: "PharmaLink",
+	locked: true,
 	points: 15,
 	days: 7,
-	team: "Team name",
-	icon: ActivityIcon,
+	team: null,
+	icon: PillIcon,
 	children: [
 		{
 			locked: true,
@@ -46,7 +48,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 			icon: ScanFaceIcon,
 			children: [
 				{
-					locked: false,
+					locked: true,
 					title: "UI",
 					points: 15,
 					days: 7,
@@ -54,7 +56,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 					icon: LayoutTemplateIcon,
 					children: [
 						{
-							locked: false,
+							locked: true,
 							title: "Frontend",
 							points: 15,
 							days: 7,
@@ -62,23 +64,13 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 							icon: PaintbrushIcon,
 							children: [
 								{
-									locked: false,
+									locked: true,
 									title: "Backend",
 									points: 15,
 									days: 7,
 									team: "Team name",
 									icon: HammerIcon,
-									children: [
-										{
-											locked: false,
-											title: "Data Collection",
-											points: 15,
-											days: 7,
-											team: "Team name",
-											icon: NotebookPenIcon,
-											children: [],
-										},
-									],
+									children: [],
 								},
 							],
 						},
@@ -87,15 +79,15 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 			],
 		},
 		{
-			locked: false,
-			title: "Student Dashboard",
+			locked: true,
+			title: "Customer Dashboard",
 			points: 15,
 			days: 7,
 			team: "Team name",
 			icon: LayoutDashboardIcon,
 			children: [
 				{
-					locked: false,
+					locked: true,
 					title: "UI",
 					points: 15,
 					days: 7,
@@ -103,7 +95,46 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 					icon: LayoutTemplateIcon,
 					children: [
 						{
-							locked: false,
+							locked: true,
+							title: "Frontend",
+							points: 15,
+							days: 7,
+							team: "Team name",
+							icon: PaintbrushIcon,
+							children: [
+								{
+									locked: true,
+									title: "Backend",
+									points: 15,
+									days: 7,
+									team: "Team name",
+									icon: HammerIcon,
+									children: [],
+								},
+							],
+						},
+					],
+				},
+			],
+		},
+		{
+			locked: true,
+			title: "Pharmacy Dashboard",
+			points: 15,
+			days: 7,
+			team: "Team name",
+			icon: LayoutDashboardIcon,
+			children: [
+				{
+					locked: true,
+					title: "UI",
+					points: 15,
+					days: 7,
+					team: "Team name",
+					icon: LayoutTemplateIcon,
+					children: [
+						{
+							locked: true,
 							title: "Frontend",
 							points: 15,
 							days: 7,
@@ -119,13 +150,43 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 									icon: HammerIcon,
 									children: [
 										{
-											locked: false,
-											title: "Data Collection",
+											locked: true,
+											title: "Pharmacy Inventory",
 											points: 15,
 											days: 7,
 											team: "Team name",
-											icon: NotebookPenIcon,
-											children: [],
+											icon: BoxesIcon,
+											children: [
+												{
+													locked: true,
+													title: "UI",
+													points: 15,
+													days: 7,
+													team: "Team name",
+													icon: LayoutTemplateIcon,
+													children: [
+														{
+															locked: true,
+															title: "Frontend",
+															points: 15,
+															days: 7,
+															team: "Team name",
+															icon: PaintbrushIcon,
+															children: [
+																{
+																	locked: true,
+																	title: "Backend",
+																	points: 15,
+																	days: 7,
+																	team: "Team name",
+																	icon: HammerIcon,
+																	children: [],
+																},
+															],
+														},
+													],
+												},
+											],
 										},
 									],
 								},
@@ -137,46 +198,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 		},
 		{
 			locked: true,
-			title: "Staff Dashboard",
-			points: 15,
-			days: 7,
-			team: "Team name",
-			icon: LayoutDashboardIcon,
-			children: [
-				{
-					locked: false,
-					title: "UI",
-					points: 15,
-					days: 7,
-					team: "Team name",
-					icon: LayoutTemplateIcon,
-					children: [
-						{
-							locked: false,
-							title: "Frontend",
-							points: 15,
-							days: 7,
-							team: "Team name",
-							icon: PaintbrushIcon,
-							children: [
-								{
-									locked: false,
-									title: "Backend",
-									points: 15,
-									days: 7,
-									team: "Team name",
-									icon: HammerIcon,
-									children: [],
-								},
-							],
-						},
-					],
-				},
-			],
-		},
-		{
-			locked: false,
-			title: "Review Submission",
+			title: "Medicine Details",
 			points: 15,
 			days: 7,
 			team: "Team name",
@@ -191,7 +213,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 					icon: LayoutTemplateIcon,
 					children: [
 						{
-							locked: false,
+							locked: true,
 							title: "Frontend",
 							points: 15,
 							days: 7,
@@ -199,7 +221,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 							icon: PaintbrushIcon,
 							children: [
 								{
-									locked: false,
+									locked: true,
 									title: "Backend",
 									points: 15,
 									days: 7,
@@ -215,14 +237,14 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 		},
 		{
 			locked: true,
-			title: "Upload Certificate",
+			title: "Find Medicine",
 			points: 15,
 			days: 7,
 			team: "Team name",
-			icon: FileUpIcon,
+			icon: SearchIcon,
 			children: [
 				{
-					locked: false,
+					locked: true,
 					title: "UI",
 					points: 15,
 					days: 7,
@@ -230,7 +252,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 					icon: LayoutTemplateIcon,
 					children: [
 						{
-							locked: false,
+							locked: true,
 							title: "Frontend",
 							points: 15,
 							days: 7,
@@ -238,7 +260,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 							icon: PaintbrushIcon,
 							children: [
 								{
-									locked: false,
+									locked: true,
 									title: "Backend",
 									points: 15,
 									days: 7,
@@ -246,13 +268,82 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 									icon: HammerIcon,
 									children: [
 										{
-											locked: false,
-											title: "Data Collection",
+											locked: true,
+											title: "Cart",
 											points: 15,
 											days: 7,
 											team: "Team name",
-											icon: NotebookPenIcon,
-											children: [],
+											icon: ShoppingCartIcon,
+											children: [
+												{
+													locked: true,
+													title: "UI",
+													points: 15,
+													days: 7,
+													team: "Team name",
+													icon: LayoutTemplateIcon,
+													children: [
+														{
+															locked: true,
+															title: "Frontend",
+															points: 15,
+															days: 7,
+															team: "Team name",
+															icon: PaintbrushIcon,
+															children: [
+																{
+																	locked: true,
+																	title: "Backend",
+																	points: 15,
+																	days: 7,
+																	team: "Team name",
+																	icon: HammerIcon,
+																	children: [],
+																},
+															],
+														},
+													],
+												},
+											],
+										},
+										{
+											locked: true,
+											title: "Place Order",
+											points: 15,
+											days: 7,
+											team: "Team name",
+											icon: CircleDollarSignIcon,
+											children: [
+												{
+													locked: true,
+													title: "UI",
+													points: 15,
+													days: 7,
+													team: "Team name",
+													icon: LayoutTemplateIcon,
+													children: [
+														{
+															locked: true,
+															title: "Frontend",
+															points: 15,
+															days: 7,
+															team: "Team name",
+															icon: PaintbrushIcon,
+															children: [
+																{
+																	locked: true,
+																	title: "Backend",
+																	points: 15,
+																	days: 7,
+																	team: "Team name",
+																	icon: HammerIcon,
+																	children: [],
+																},
+															],
+														},
+													],
+												},
+											],
 										},
 									],
 								},
@@ -263,24 +354,15 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 			],
 		},
 		{
-			locked: false,
-			title: "Miscellaneous",
+			locked: true,
+			title: "Pharmacy Profile",
 			points: 15,
 			days: 7,
 			team: "Team name",
-			icon: EllipsisIcon,
-			children: [],
-		},
-		{
-			locked: false,
-			title: "Administrator Page",
-			points: 15,
-			days: 7,
-			team: "Team name",
-			icon: ShieldIcon,
+			icon: PillBottleIcon,
 			children: [
 				{
-					locked: false,
+					locked: true,
 					title: "UI",
 					points: 15,
 					days: 7,
@@ -288,7 +370,7 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 					icon: LayoutTemplateIcon,
 					children: [
 						{
-							locked: false,
+							locked: true,
 							title: "Frontend",
 							points: 15,
 							days: 7,
@@ -296,23 +378,52 @@ export const ACTIVITY_MANAGEMENT: BaseNode = {
 							icon: PaintbrushIcon,
 							children: [
 								{
-									locked: false,
+									locked: true,
 									title: "Backend",
 									points: 15,
 									days: 7,
 									team: "Team name",
 									icon: HammerIcon,
-									children: [
-										{
-											locked: false,
-											title: "Data Collection",
-											points: 15,
-											days: 7,
-											team: "Team name",
-											icon: NotebookPenIcon,
-											children: [],
-										},
-									],
+									children: [],
+								},
+							],
+						},
+					],
+				},
+			],
+		},
+		{
+			locked: true,
+			title: "Customer Profile",
+			points: 15,
+			days: 7,
+			team: "Team name",
+			icon: UserRoundIcon,
+			children: [
+				{
+					locked: true,
+					title: "UI",
+					points: 15,
+					days: 7,
+					team: "Team name",
+					icon: LayoutTemplateIcon,
+					children: [
+						{
+							locked: true,
+							title: "Frontend",
+							points: 15,
+							days: 7,
+							team: "Team name",
+							icon: PaintbrushIcon,
+							children: [
+								{
+									locked: true,
+									title: "Backend",
+									points: 15,
+									days: 7,
+									team: "Team name",
+									icon: HammerIcon,
+									children: [],
 								},
 							],
 						},
