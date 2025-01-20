@@ -34,24 +34,18 @@ export function generateNode(node: BaseNode, locked: boolean, level = 0): Node {
 export const PHARMALINK: BaseNode = {
 	title: "PharmaLink",
 	locked: true,
-	points: 15,
-	days: 7,
-	team: null,
 	icon: PillIcon,
 	children: [
 		{
 			locked: true,
 			title: "Login and Registration",
-			points: null,
-			days: 7,
-			team: "Team name",
 			icon: ScanFaceIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -59,7 +53,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -67,7 +61,7 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [],
@@ -81,16 +75,13 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Customer Dashboard",
-			points: 15,
-			days: 7,
-			team: "Team name",
 			icon: LayoutDashboardIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -98,7 +89,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -106,7 +97,7 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [],
@@ -120,16 +111,13 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Pharmacy Dashboard",
-			points: 15,
-			days: 7,
-			team: "Team name",
 			icon: LayoutDashboardIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -137,7 +125,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -145,23 +133,20 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [
 										{
 											locked: true,
 											title: "Pharmacy Inventory",
-											points: 15,
-											days: 7,
-											team: "Team name",
 											icon: BoxesIcon,
 											children: [
 												{
 													locked: true,
 													title: "UI",
-													points: 15,
-													days: 7,
+													points: 5,
+													days: 1,
 													team: "Team name",
 													icon: LayoutTemplateIcon,
 													children: [
@@ -169,7 +154,7 @@ export const PHARMALINK: BaseNode = {
 															locked: true,
 															title: "Frontend",
 															points: 15,
-															days: 7,
+															days: 3,
 															team: "Team name",
 															icon: PaintbrushIcon,
 															children: [
@@ -177,7 +162,7 @@ export const PHARMALINK: BaseNode = {
 																	locked: true,
 																	title: "Backend",
 																	points: 15,
-																	days: 7,
+																	days: 3,
 																	team: "Team name",
 																	icon: HammerIcon,
 																	children: [],
@@ -199,16 +184,13 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Medicine Details",
-			points: 15,
-			days: 7,
-			team: "Team name",
 			icon: EyeIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -216,7 +198,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -224,7 +206,7 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [],
@@ -238,16 +220,13 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Find Medicine",
-			points: 15,
-			days: 7,
-			team: "Team name",
 			icon: SearchIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -255,7 +234,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -263,23 +242,20 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [
 										{
 											locked: true,
 											title: "Cart",
-											points: 15,
-											days: 7,
-											team: "Team name",
 											icon: ShoppingCartIcon,
 											children: [
 												{
 													locked: true,
 													title: "UI",
-													points: 15,
-													days: 7,
+													points: 5,
+													days: 1,
 													team: "Team name",
 													icon: LayoutTemplateIcon,
 													children: [
@@ -287,7 +263,7 @@ export const PHARMALINK: BaseNode = {
 															locked: true,
 															title: "Frontend",
 															points: 15,
-															days: 7,
+															days: 3,
 															team: "Team name",
 															icon: PaintbrushIcon,
 															children: [
@@ -295,7 +271,7 @@ export const PHARMALINK: BaseNode = {
 																	locked: true,
 																	title: "Backend",
 																	points: 15,
-																	days: 7,
+																	days: 3,
 																	team: "Team name",
 																	icon: HammerIcon,
 																	children: [],
@@ -309,16 +285,13 @@ export const PHARMALINK: BaseNode = {
 										{
 											locked: true,
 											title: "Place Order",
-											points: 15,
-											days: 7,
-											team: "Team name",
 											icon: CircleDollarSignIcon,
 											children: [
 												{
 													locked: true,
 													title: "UI",
-													points: 15,
-													days: 7,
+													points: 5,
+													days: 1,
 													team: "Team name",
 													icon: LayoutTemplateIcon,
 													children: [
@@ -326,7 +299,7 @@ export const PHARMALINK: BaseNode = {
 															locked: true,
 															title: "Frontend",
 															points: 15,
-															days: 7,
+															days: 3,
 															team: "Team name",
 															icon: PaintbrushIcon,
 															children: [
@@ -334,7 +307,7 @@ export const PHARMALINK: BaseNode = {
 																	locked: true,
 																	title: "Backend",
 																	points: 15,
-																	days: 7,
+																	days: 3,
 																	team: "Team name",
 																	icon: HammerIcon,
 																	children: [],
@@ -356,16 +329,13 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Pharmacy Profile",
-			points: 15,
-			days: 7,
-			team: "Team name",
 			icon: PillBottleIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -373,7 +343,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -381,7 +351,7 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [],
@@ -395,16 +365,13 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Customer Profile",
-			points: 15,
-			days: 7,
-			team: "Team name",
 			icon: UserRoundIcon,
 			children: [
 				{
 					locked: true,
 					title: "UI",
-					points: 15,
-					days: 7,
+					points: 5,
+					days: 1,
 					team: "Team name",
 					icon: LayoutTemplateIcon,
 					children: [
@@ -412,7 +379,7 @@ export const PHARMALINK: BaseNode = {
 							locked: true,
 							title: "Frontend",
 							points: 15,
-							days: 7,
+							days: 3,
 							team: "Team name",
 							icon: PaintbrushIcon,
 							children: [
@@ -420,7 +387,7 @@ export const PHARMALINK: BaseNode = {
 									locked: true,
 									title: "Backend",
 									points: 15,
-									days: 7,
+									days: 3,
 									team: "Team name",
 									icon: HammerIcon,
 									children: [],
@@ -433,3 +400,87 @@ export const PHARMALINK: BaseNode = {
 		},
 	],
 };
+
+interface TeamDetails {
+	name: string;
+	points: number;
+	members: string[];
+}
+
+const TEAMS = {
+	1: {
+		name: "Team 1",
+		points: 90,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	2: {
+		name: "Team 2",
+		points: 90,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	3: {
+		name: "Team 3",
+		points: 67,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	4: {
+		name: "Team 4",
+		points: 67,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	5: {
+		name: "Team 5",
+		points: 67,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	6: {
+		name: "Team 6",
+		points: 32,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	7: {
+		name: "Team 7",
+		points: 32,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	8: {
+		name: "Team 8",
+		points: 15,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	9: {
+		name: "Team 9",
+		points: 12,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	10: {
+		name: "Team 10",
+		points: 4,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+	11: {
+		name: "Team 11",
+		points: 4,
+		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+	},
+} satisfies Record<number, TeamDetails>;
+
+export function generateLeaderboard(leaderboard: Record<number, TeamDetails>) {
+	const grouped = Object.entries(leaderboard).reduce(
+		(groups, [id, team]) => {
+			return {
+				...groups,
+				[team.points]:
+					groups[team.points] == null
+						? [{ ...team, id: Number(id) }]
+						: [...groups[team.points], { ...team, id: Number(id) }],
+			};
+		},
+		{} as Record<number, (TeamDetails & { id: number })[]>,
+	);
+	return Object.values(grouped)
+		.toSorted((a, b) => b[0].points - a[0].points)
+		.map((group, i) => ({ rank: i + 1, teams: group }));
+}
+
+export const LEADERBOARD = generateLeaderboard(TEAMS);

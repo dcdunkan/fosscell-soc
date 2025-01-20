@@ -70,8 +70,9 @@ const config: Config = {
 			fontFamily: {
 				title: ["Panchang-Variable"],
 				clash: ["ClashDisplay-Variable"],
-				serif: ["'EB Garamond'", ...fontFamily.serif],
+				serif: ['"EB Garamond"', ...fontFamily.serif],
 				sans: [...fontFamily.sans],
+				playful: ['"Covered By Your Grace"', '"Permanent Marker"'],
 			},
 			keyframes: {
 				"accordion-down": {

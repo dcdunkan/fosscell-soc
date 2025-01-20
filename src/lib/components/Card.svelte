@@ -67,13 +67,13 @@
 				</div>
 			{/if}
 		</div>
-		<div class="mt-4 line-clamp-3 truncate text-wrap font-serif text-lg">
+		<!-- <div class="mt-4 line-clamp-3 truncate text-wrap font-serif text-lg">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque quam eros, a feugiat
 			nulla tristique vitae. Pellentesque fermentum ante quis posuere ultrices. Praesent ac mi
 			sapien. Aenean hendrerit felis quis sem semper faucibus. Nullam id aliquam erat, tincidunt
 			auctor enim. Morbi consectetur auctor auctor. Morbi convallis felis at dolor lobortis
 			vestibulum. In sit amet commodo dui.
-		</div>
+		</div> -->
 		<!-- {#if data.locked}
 			<button
 				class="bg-special hover:text-special mt-4 rounded p-2 font-clash font-semibold text-white transition-all duration-200 hover:bg-white"
@@ -84,15 +84,19 @@
 {/snippet}
 
 <div class="flex cursor-pointer place-items-center py-2 text-[#1B3292]">
-	{#if isDesktop.current}
-		<Popover.Root>
-			<Popover.Trigger>{@render trigger()}</Popover.Trigger>
-			<Popover.Content>{@render content()}</Popover.Content>
-		</Popover.Root>
+	{#if data.points != null && data.days != null && data.team != null}
+		{#if isDesktop.current}
+			<Popover.Root>
+				<Popover.Trigger>{@render trigger()}</Popover.Trigger>
+				<Popover.Content>{@render content()}</Popover.Content>
+			</Popover.Root>
+		{:else}
+			<Drawer.Root>
+				<Drawer.Trigger>{@render trigger()}</Drawer.Trigger>
+				<Drawer.Content>{@render content()}</Drawer.Content>
+			</Drawer.Root>
+		{/if}
 	{:else}
-		<Drawer.Root>
-			<Drawer.Trigger>{@render trigger()}</Drawer.Trigger>
-			<Drawer.Content>{@render content()}</Drawer.Content>
-		</Drawer.Root>
+		{@render trigger()}
 	{/if}
 </div>

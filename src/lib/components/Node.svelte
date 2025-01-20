@@ -4,9 +4,9 @@
 	export interface Node {
 		id: string;
 		title: string;
-		points: number | null;
-		days: number | null;
-		team: string | null;
+		points?: number;
+		days?: number;
+		team?: string;
 		icon: typeof Icon;
 		level: number;
 		locked: boolean;
