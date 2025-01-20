@@ -5,6 +5,7 @@
 	import { CircleDollarSign, Clock10, LockIcon, UsersRoundIcon } from "lucide-svelte";
 	import * as Popover from "$lib/components/ui/popover";
 	import { MediaQuery } from "svelte/reactivity";
+	import { TEAMS } from "$lib/initial-data";
 
 	let { hasHovered, data }: { hasHovered: boolean; data: Node } = $props();
 
@@ -43,7 +44,9 @@
 {/snippet}
 
 {#snippet content()}
-	<div class="mx-auto flex max-w-screen-md flex-col {isDesktop.current ? 'p-3' : 'p-8'}">
+	<div
+		class="mx-auto flex max-w-screen-md flex-col text-center {isDesktop.current ? 'p-3' : 'p-8'}"
+	>
 		<div class="font-clash text-2xl font-medium text-[#1B3292]">{data.title}</div>
 		<div class="mt-2">
 			{#if data.points != null}
@@ -58,11 +61,11 @@
 					<div>3 days left</div>
 				</div>
 			{/if}
-			{#if data.team != null && data.team.trim().length > 0}
+			{#if data.team != null}
 				<div class="flex place-items-center gap-2 font-clash text-lg">
 					<UsersRoundIcon class="size-5" />
 					<div class="text-wrap">
-						{data.team}
+						{TEAMS[data.team].name}
 					</div>
 				</div>
 			{/if}

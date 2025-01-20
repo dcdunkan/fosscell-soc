@@ -46,7 +46,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -54,7 +54,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -62,7 +62,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [],
 								},
@@ -82,7 +82,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -90,7 +90,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -98,7 +98,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [],
 								},
@@ -118,7 +118,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -126,7 +126,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -134,7 +134,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [
 										{
@@ -147,7 +147,7 @@ export const PHARMALINK: BaseNode = {
 													title: "UI",
 													points: 5,
 													days: 1,
-													team: "Team name",
+													team: 1,
 													icon: LayoutTemplateIcon,
 													children: [
 														{
@@ -155,7 +155,7 @@ export const PHARMALINK: BaseNode = {
 															title: "Frontend",
 															points: 15,
 															days: 3,
-															team: "Team name",
+															team: 1,
 															icon: PaintbrushIcon,
 															children: [
 																{
@@ -163,7 +163,7 @@ export const PHARMALINK: BaseNode = {
 																	title: "Backend",
 																	points: 15,
 																	days: 3,
-																	team: "Team name",
+																	team: 1,
 																	icon: HammerIcon,
 																	children: [],
 																},
@@ -191,7 +191,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -199,7 +199,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -207,7 +207,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [],
 								},
@@ -227,7 +227,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -235,7 +235,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -243,7 +243,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [
 										{
@@ -256,7 +256,7 @@ export const PHARMALINK: BaseNode = {
 													title: "UI",
 													points: 5,
 													days: 1,
-													team: "Team name",
+													team: 1,
 													icon: LayoutTemplateIcon,
 													children: [
 														{
@@ -264,7 +264,7 @@ export const PHARMALINK: BaseNode = {
 															title: "Frontend",
 															points: 15,
 															days: 3,
-															team: "Team name",
+															team: 1,
 															icon: PaintbrushIcon,
 															children: [
 																{
@@ -272,7 +272,7 @@ export const PHARMALINK: BaseNode = {
 																	title: "Backend",
 																	points: 15,
 																	days: 3,
-																	team: "Team name",
+																	team: 1,
 																	icon: HammerIcon,
 																	children: [],
 																},
@@ -292,7 +292,7 @@ export const PHARMALINK: BaseNode = {
 													title: "UI",
 													points: 5,
 													days: 1,
-													team: "Team name",
+													team: 1,
 													icon: LayoutTemplateIcon,
 													children: [
 														{
@@ -300,7 +300,7 @@ export const PHARMALINK: BaseNode = {
 															title: "Frontend",
 															points: 15,
 															days: 3,
-															team: "Team name",
+															team: 1,
 															icon: PaintbrushIcon,
 															children: [
 																{
@@ -308,7 +308,7 @@ export const PHARMALINK: BaseNode = {
 																	title: "Backend",
 																	points: 15,
 																	days: 3,
-																	team: "Team name",
+																	team: 1,
 																	icon: HammerIcon,
 																	children: [],
 																},
@@ -336,7 +336,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -344,7 +344,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -352,7 +352,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [],
 								},
@@ -372,7 +372,7 @@ export const PHARMALINK: BaseNode = {
 					title: "UI",
 					points: 5,
 					days: 1,
-					team: "Team name",
+					team: 1,
 					icon: LayoutTemplateIcon,
 					children: [
 						{
@@ -380,7 +380,7 @@ export const PHARMALINK: BaseNode = {
 							title: "Frontend",
 							points: 15,
 							days: 3,
-							team: "Team name",
+							team: 1,
 							icon: PaintbrushIcon,
 							children: [
 								{
@@ -388,7 +388,7 @@ export const PHARMALINK: BaseNode = {
 									title: "Backend",
 									points: 15,
 									days: 3,
-									team: "Team name",
+									team: 1,
 									icon: HammerIcon,
 									children: [],
 								},
@@ -405,63 +405,75 @@ interface TeamDetails {
 	name: string;
 	points: number;
 	members: string[];
+	priority: number;
 }
 
-const TEAMS = {
+export const TEAMS: Record<number, TeamDetails> = {
 	1: {
-		name: "Team 1",
+		name: "Dangerous Guanaco",
 		points: 90,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	2: {
-		name: "Team 2",
+		name: "Nocturnal Moose",
 		points: 90,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	3: {
-		name: "Team 3",
+		name: "Large Owl",
 		points: 67,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	4: {
-		name: "Team 4",
+		name: "Agile Ibex",
 		points: 67,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	5: {
-		name: "Team 5",
+		name: "Slimy Eel",
 		points: 67,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	6: {
-		name: "Team 6",
+		name: "Short Grasshopper",
 		points: 32,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	7: {
-		name: "Team 7",
+		name: "Candid Rail",
 		points: 32,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	8: {
-		name: "Team 8",
+		name: "Carnivorous Falcon",
 		points: 15,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	9: {
-		name: "Team 9",
+		name: "Domestic Narwhal",
 		points: 12,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	10: {
-		name: "Team 10",
+		name: "Fierce Spider",
 		points: 4,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 	11: {
-		name: "Team 11",
+		name: "Cuddly Marten",
 		points: 4,
 		members: ["Member 1", "Member 2", "Member 3", "Member4"],
+		priority: 0,
 	},
 } satisfies Record<number, TeamDetails>;
 
@@ -480,7 +492,10 @@ export function generateLeaderboard(leaderboard: Record<number, TeamDetails>) {
 	);
 	return Object.values(grouped)
 		.toSorted((a, b) => b[0].points - a[0].points)
-		.map((group, i) => ({ rank: i + 1, teams: group }));
+		.map((group, i) => ({
+			rank: i + 1,
+			teams: group.toSorted((a, b) => b.priority - a.priority),
+		}));
 }
 
 export const LEADERBOARD = generateLeaderboard(TEAMS);

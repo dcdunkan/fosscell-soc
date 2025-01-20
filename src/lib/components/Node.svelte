@@ -6,7 +6,7 @@
 		title: string;
 		points?: number;
 		days?: number;
-		team?: string;
+		team?: number;
 		icon: typeof Icon;
 		level: number;
 		locked: boolean;
@@ -128,7 +128,7 @@
 	{#if data.children.length > 0}
 		{@const n = data.children.length}
 
-		<div class="grid auto-cols-min grid-rows-[{n}] auto-rows-fr">
+		<div class="grid auto-cols-min grid-rows-[{n}] auto-rows-min">
 			{#each data.children as child, i}
 				<div class="flex place-items-center">
 					{#if n === 1}
