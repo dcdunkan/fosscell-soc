@@ -4,6 +4,7 @@ import {
 	CircleDollarSignIcon,
 	EyeIcon,
 	HammerIcon,
+	HeartIcon,
 	LayoutDashboardIcon,
 	LayoutTemplateIcon,
 	PaintbrushIcon,
@@ -12,6 +13,7 @@ import {
 	ScanFaceIcon,
 	SearchIcon,
 	ShoppingCartIcon,
+	UploadCloudIcon,
 	UserRoundIcon,
 } from "lucide-svelte";
 
@@ -39,6 +41,7 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Login and Registration",
+			team: 1,
 			icon: ScanFaceIcon,
 			children: [
 				{
@@ -75,6 +78,7 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Customer Dashboard",
+			team: 1,
 			icon: LayoutDashboardIcon,
 			children: [
 				{
@@ -111,6 +115,7 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Pharmacy Dashboard",
+			team: 1,
 			icon: LayoutDashboardIcon,
 			children: [
 				{
@@ -140,6 +145,7 @@ export const PHARMALINK: BaseNode = {
 										{
 											locked: true,
 											title: "Pharmacy Inventory",
+											team: 1,
 											icon: BoxesIcon,
 											children: [
 												{
@@ -184,6 +190,7 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Medicine Details",
+			team: 1,
 			icon: EyeIcon,
 			children: [
 				{
@@ -220,6 +227,7 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Find Medicine",
+			team: 1,
 			icon: SearchIcon,
 			children: [
 				{
@@ -249,6 +257,7 @@ export const PHARMALINK: BaseNode = {
 										{
 											locked: true,
 											title: "Cart",
+											team: 1,
 											icon: ShoppingCartIcon,
 											children: [
 												{
@@ -285,6 +294,7 @@ export const PHARMALINK: BaseNode = {
 										{
 											locked: true,
 											title: "Place Order",
+											team: 1,
 											icon: CircleDollarSignIcon,
 											children: [
 												{
@@ -329,6 +339,7 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Pharmacy Profile",
+			team: 1,
 			icon: PillBottleIcon,
 			children: [
 				{
@@ -365,7 +376,82 @@ export const PHARMALINK: BaseNode = {
 		{
 			locked: true,
 			title: "Customer Profile",
+			team: 1,
 			icon: UserRoundIcon,
+			children: [
+				{
+					locked: true,
+					title: "UI",
+					points: 5,
+					days: 1,
+					team: 1,
+					icon: LayoutTemplateIcon,
+					children: [
+						{
+							locked: true,
+							title: "Frontend",
+							points: 15,
+							days: 3,
+							team: 1,
+							icon: PaintbrushIcon,
+							children: [
+								{
+									locked: true,
+									title: "Backend",
+									points: 15,
+									days: 3,
+									team: 1,
+									icon: HammerIcon,
+									children: [],
+								},
+							],
+						},
+					],
+				},
+			],
+		},
+		{
+			locked: true,
+			title: "Favourite Services",
+			team: 1,
+			icon: HeartIcon,
+			children: [
+				{
+					locked: true,
+					title: "UI",
+					points: 5,
+					days: 1,
+					team: 1,
+					icon: LayoutTemplateIcon,
+					children: [
+						{
+							locked: true,
+							title: "Frontend",
+							points: 15,
+							days: 3,
+							team: 1,
+							icon: PaintbrushIcon,
+							children: [
+								{
+									locked: true,
+									title: "Backend",
+									points: 15,
+									days: 3,
+									team: 1,
+									icon: HammerIcon,
+									children: [],
+								},
+							],
+						},
+					],
+				},
+			],
+		},
+		{
+			locked: true,
+			title: "Prescription Upload",
+			team: 1,
+			icon: UploadCloudIcon,
 			children: [
 				{
 					locked: true,

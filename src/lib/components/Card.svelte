@@ -87,7 +87,7 @@
 {/snippet}
 
 <div class="flex cursor-pointer place-items-center py-2 text-[#1B3292]">
-	{#if data.points != null && data.days != null && data.team != null}
+	{#if data.points != null || data.days != null || data.team != null}
 		{#if isDesktop.current}
 			<Popover.Root>
 				<Popover.Trigger>{@render trigger()}</Popover.Trigger>
