@@ -21,9 +21,9 @@
 			"group text-nowrap rounded px-6 py-4 text-left transition-all duration-100",
 			"min-w-72 max-w-96",
 			"border-2 drop-shadow-none",
-			"hover:scale-105 hover:border-solid hover:border-[#1B3292] hover:bg-white hover:drop-shadow-lg",
+			"hover:scale-105 hover:border-solid hover:border-[#162253] hover:bg-[#2c44a7] hover:text-white hover:drop-shadow-lg",
 			{
-				"border-solid border-gray-300 bg-white/20": data.locked,
+				"border-solid border-gray-300 bg-white/60": data.locked,
 				"border-solid border-[#1B3292] bg-white": !data.locked,
 			},
 		)}
